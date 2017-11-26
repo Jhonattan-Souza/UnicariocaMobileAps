@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.azurewebsites.jhonattansouza.unicariocamobileaps.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
+        android:text="@string/descricao"
+        android:textColor="#999999"
+        android:textColorLink="#000000"
+        android:textSize="@dimen/texto_tamanho_padao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.030"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <EditText
+        android:id="@+id/txtDescricaoId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#3d070303"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/vazio"
+        android:textColor="#e3dede"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:text="@string/quantidade"
+        android:textColor="#999999"
+        android:textColorLink="#000000"
+        android:textSize="@dimen/texto_tamanho_padao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.030"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <EditText
+        android:id="@+id/txtQuantidadeId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#3d070303"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/vazio"
+        android:textColor="#e3dede"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="203dp"
+        android:layout_height="40dp"
+        android:text="@string/preco_unitario"
+        android:textColor="#999999"
+        android:textColorLink="#000000"
+        android:textSize="@dimen/texto_tamanho_padao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.030"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.570" />
+
+    <EditText
+        android:id="@+id/txtPrecoUnitarioId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#3d070303"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/vazio"
+        android:textColor="#e3dede"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disponivel"
+        android:textColor="#999999"
+        android:textColorLink="#000000"
+        android:textSize="@dimen/texto_tamanho_padao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.030"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825">
+
+        <RadioButton
+            android:id="@+id/radioButtonSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sim"
+            android:textColor="#999999"
+            android:textColorLink="@android:color/holo_green_dark"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nao"
+            android:textColor="#999999"
+            android:textColorLink="@android:color/holo_green_dark"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="423dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botaoListarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/list_selector_background"
+        android:text="@string/listar"
+        android:textColor="#ff6600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/botaoAlterarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/list_selector_background"
+        android:text="@string/alterar"
+        android:textColor="#009900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/botaoExcluirId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/list_selector_background"
+        android:text="@string/excluir"
+        android:textColor="#dd5044"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/botaoInserirId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/list_selector_background"
+        android:text="@string/incluir"
+        android:textColor="#0143d7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/LayoutId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ListView
+            android:id="@+id/listViewListarId"
+            android:layout_width="357dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="112dp"
+            android:background="#8e1b1b1b"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/botaoFecharId"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:background="#001b1b1b"
+            android:text="X Fechar"
+            android:textColor="#ff0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="#ff6600"
+            android:paddingTop="10dp"
+            android:text=" Produtos:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.000" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/LayoutExcluirId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ListView
+            android:id="@+id/listViewExcluirId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="112dp"
+            android:background="#8e1b1b1b"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/botaoFecharId1"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:background="#001b1b1b"
+            android:text="X Fechar"
+            android:textColor="#ff0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="#dd5044"
+            android:paddingTop="10dp"
+            android:text=" Clique no produto para Excluir:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.000" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/logoId"
+        android:layout_width="104dp"
+        android:layout_height="97dp"
+        android:background="@drawable/estoque2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/LayoutAlterarId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/botaoFecharId2"
+            android:layout_width="357dp"
+            android:layout_height="35dp"
+            android:background="#001b1b1b"
+            android:text="X Fechar"
+            android:textColor="#ff0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="#009900"
+            android:paddingTop="10dp"
+            android:text=" Clique no produto para Alterar:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.000" />
+
+        <!--campos para ediçao do cadastro-->
+        <TextView
+            android:id="@+id/labelDescricao2"
+            android:layout_width="153dp"
+            android:layout_height="40dp"
+            android:text="@string/descricao"
+            android:textColor="#999999"
+            android:textColorLink="#000000"
+            android:textSize="@dimen/texto_tamanho_padao"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.265" />
+
+        <EditText
+            android:id="@+id/txtDescricaoId2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3d070303"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/vazio"
+            android:textColor="#e3dede"
+            android:textColorLink="#000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.331" />
+
+        <TextView
+            android:id="@+id/labelQuantidade2"
+            android:layout_width="165dp"
+            android:layout_height="44dp"
+            android:text="@string/quantidade"
+            android:textColor="#999999"
+            android:textColorLink="#000000"
+            android:textSize="@dimen/texto_tamanho_padao"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.385" />
+
+        <EditText
+            android:id="@+id/txtQuantidadeId2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3d070303"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/vazio"
+            android:textColor="#e3dede"
+            android:textColorLink="#000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.432" />
+
+        <TextView
+            android:id="@+id/labelPrecoUnitario2"
+            android:layout_width="203dp"
+            android:layout_height="40dp"
+            android:text="@string/preco_unitario"
+            android:textColor="#999999"
+            android:textColorLink="#000000"
+            android:textSize="@dimen/texto_tamanho_padao"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+
+        <EditText
+            android:id="@+id/txtPrecoUnitarioId2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3d070303"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/vazio"
+            android:textColor="#e3dede"
+            android:textColorLink="#000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.557" />
+
+        <TextView
+            android:id="@+id/labelDisponivelVenda2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disponivel"
+            android:textColor="#999999"
+            android:textColorLink="#000000"
+            android:textSize="@dimen/texto_tamanho_padao"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupId2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.765">
+
+            <RadioButton
+                android:id="@+id/radioButtonSim2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sim"
+                android:textColor="#999999"
+                android:textColorLink="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="423dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNao2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/nao"
+                android:textColor="#999999"
+                android:textColorLink="@android:color/holo_green_dark"
+                tools:layout_editor_absoluteX="219dp"
+                tools:layout_editor_absoluteY="423dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/botaoSalvarId"
+            android:layout_width="297dp"
+            android:layout_height="45dp"
+            android:background="#009900"
+            android:text="Salvar"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.965" />
+
+        <ListView
+            android:id="@+id/listViewAlterarId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="112dp"
+            android:background="#222222"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UnicariocaMobileAps</string>
+    <string name="descricao">Descrição:</string>
+    <string name="vazio" />
+    <string name="quantidade">Quantidade:</string>
+    <string name="preco_unitario">Preço Unitário:</string>
+    <string name="disponivel">Disponível Para Venda:</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="incluir">Incluir</string>
+    <string name="excluir">Excluir</string>
+    <string name="alterar">Alterar</string>
+    <string name="listar">Listar</string>
+</resources>
